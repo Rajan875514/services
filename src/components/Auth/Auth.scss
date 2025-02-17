@@ -1,0 +1,80 @@
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background: url("../../assets/images/password.jpg") no-repeat center center;
+  background-size: cover;
+  padding-left: 5%;
+}
+
+.auth-container {
+  max-width: 500px;
+  padding: 30px;
+  background: rgba(44, 62, 80, 0.9);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.auth-logo {
+  display: block;
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #f1c40f;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 15px;
+
+  input {
+    width: 100%;
+    padding: 10px 40px; /* Space for the icon */
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+  }
+
+  .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+  }
+}
+
+.auth-btn {
+  width: 100%;
+  background: #f1c40f;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: background 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: #e67e22;
+  }
+}
+
+.auth-link {
+  margin-top: 10px;
+
+  a {
+    color: #f1c40f;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      color: #e67e22;
+    }
+  }
+}

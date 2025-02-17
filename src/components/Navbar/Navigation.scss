@@ -1,0 +1,103 @@
+.custom-navbar {
+  // background: linear-gradient(135deg, #f1c40f, #e67e22); // Elegant gradient background
+  background: linear-gradient(135deg, #2c3e50, #1a1a1a);
+  padding: 1rem 0; // More spacing for a premium feel
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      transition: transform 0.4s ease-in-out;
+
+      &:hover {
+        transform: rotate(360deg) scale(1.1);
+      }
+    }
+
+    .brand-name {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #fff;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: #ffdd44;
+      }
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 35px; // Increased space between items for a cleaner look
+
+    .nav-item {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      text-transform: uppercase;
+
+      &:hover {
+        color: yellow; // Light Red Hover Effect
+        background: rgba(198, 128, 128, 0.1);
+        transform: scale(1.1);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -4px;
+        width: 0%;
+        height: 3px;
+        background: orange; // Light Red Underline
+        transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+    
+    .btn-contact {
+      background-color: #ffcc00;
+      color: #222;
+      font-weight: bold;
+      padding: 12px 25px;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      display: inline-block;
+
+      &:hover {
+        background-color: #ecc9c9; // Light Red Button Hover
+        color: #fff;
+        box-shadow: 0px 5px 15px rgba(201, 153, 153, 0.5);
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+
+    .navbar-toggler-icon {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 5px;
+    }
+  }
+}

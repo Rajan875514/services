@@ -1,0 +1,36 @@
+.testimonials-section {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+  
+    .testimonial-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease-in-out;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+  
+      .testimonial-img {
+        width: 200px;
+        height: 150px;
+        
+        object-fit: cover;
+      }
+      
+  
+      .testimonial-review {
+        font-style: italic;
+        color: #555;
+      }
+  
+      .testimonial-name {
+        font-weight: bold;
+        margin-top: 10px;
+        color: #333;
+      }
+    }
+  }
+  

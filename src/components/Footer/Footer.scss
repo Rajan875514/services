@@ -1,0 +1,84 @@
+.custom-footer {
+  background: linear-gradient(135deg, #2c3e50, #1a1a1a);
+  color: white;
+  padding: 30px 0; // Reduced height slightly
+  text-align: left;
+
+  h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #f1c40f;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px;
+
+    li {
+      margin-bottom: 6px;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: #ff9900; // Orange hover effect
+          text-decoration: none; // Removed underline
+        }
+      }
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 10px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      font-size: 1.2rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: linear-gradient(135deg, #f1c40f, #ff6600);
+        color: #222;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  hr {
+    border-color: rgba(255, 255, 255, 0.2);
+    margin-top: 15px;
+  }
+
+  p.text-center {
+    font-size: 0.85rem;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+
+    .social-icons {
+      justify-content: center;
+    }
+  }
+}
