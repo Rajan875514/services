@@ -1,61 +1,74 @@
 .hero-section {
-  min-height: 100vh;
-  width: 100%;
-  background: url('/src/assets/images/home.jpg') no-repeat center center/cover;
   position: relative;
+  background-image: url('/src/assets/images/home.jpg'); // Uncomment if needed
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  color: white;
   text-align: center;
 
-  // Dark overlay for better contrast
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); // Adds a slight dark overlay
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .content {
     position: relative;
-    z-index: 2;
-  }
+    z-index: 1;
 
-  h1 {
-    color: yellow;
-    opacity: 0.9;
-    font-weight: bold;
-    font-size: 3rem;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-  }
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
 
-  .subtitle {
-    font-size: 1.2rem;
-    color: #f8f9fa;
-    margin-bottom: 1rem;
-  }
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+    }
 
-  select,
-  input {
-    height: 50px;
-    font-size: 1rem;
-    border-radius: 8px;
-    padding: 10px;
-  }
+    .form-select,
+    .form-control {
+      margin-bottom: 1.5rem;
+    }
 
-  .btn-search {
-    height: 50px;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: 0.3s ease-in-out;
-    
-    &:hover {
-      background: #f8b400;
-      color: white;
-      transform: scale(1.05);
+    .btn-search {
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #f8f9fa;
+      }
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #000;
+      border: none;
+      border-radius: 10px;
+
+      .card-body {
+        padding: 1.5rem;
+      }
+
+      .card-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .card-text {
+        font-size: 1rem;
+      }
     }
   }
 }

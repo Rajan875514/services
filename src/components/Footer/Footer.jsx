@@ -10,8 +10,7 @@ const Footer = () => {
         <Row>
           <Col md={4}>
             <h5>About Us</h5>
-            <p>We provide the best services tailored to your
-                needs, ensuring quality and reliability.</p>
+            <p>We provide the best services tailored to your needs, ensuring quality and reliability.</p>
           </Col>
           <Col md={4}>
             <h5>Quick Links</h5>
@@ -32,8 +31,7 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
-        <hr />
-        <p className="text-center" >&copy; 2025 Rajan Services. All Rights Reserved.</p>
+        <p className="text-center">&copy; 2025 Rajan Services. All Rights Reserved.</p>
       </Container>
     </footer>
   );

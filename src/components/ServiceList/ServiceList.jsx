@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 
 const ServiceList = ({ searchQuery }) => {
@@ -25,10 +26,20 @@ const ServiceList = ({ searchQuery }) => {
       });
   }, []);
 
-  // Filter services based on search query
-  const filteredServices = services.filter((service) =>
-    service?.title?.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  // Filter services based on search query (Category & Location)
+  const filteredServices = services.filter((service) => {
+    const matchesCategory = searchQuery.category
+      ? service.category.toLowerCase().includes(searchQuery.category.toLowerCase())
+      : true;
+
+    const matchesLocation = searchQuery.location
+      ? service.location.toLowerCase().includes(searchQuery.location.toLowerCase())
+      : true;
+
+    const matchesTitle = service.title.toLowerCase().includes(searchQuery.title.toLowerCase());
+
+    return matchesCategory && matchesLocation && matchesTitle;
+  });
 
   return (
     <div>
@@ -40,6 +51,8 @@ const ServiceList = ({ searchQuery }) => {
           <div key={service._id}>
             <h3>{service.title}</h3>
             <p>{service.description}</p>
+            <p><strong>Location:</strong> {service.location}</p>
+            <p><strong>Category:</strong> {service.category}</p>
           </div>
         ))
       ) : (

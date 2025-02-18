@@ -1,11 +1,20 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .auth-page {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  height: 100vh;
+  justify-content: center; /* Centers the content horizontally */
+  min-height: 100vh; /* Ensures full viewport height */
+  width: 100% ; /* Ensures full width */
   background: url("../../assets/images/password.jpg") no-repeat center center;
-  background-size: cover;
-  padding-left: 5%;
+  background-size: cover; /* Adjusts the image to cover the full screen */
+  background-attachment: fixed; /* Keeps background fixed while scrolling */
 }
 
 .auth-container {
@@ -32,22 +41,22 @@ h2 {
 .form-group {
   position: relative;
   margin-bottom: 15px;
+}
 
-  input {
-    width: 100%;
-    padding: 10px 40px; /* Space for the icon */
-    border-radius: 5px;
-    border: none;
-    font-size: 14px;
-  }
+.form-group input {
+  width: 100%;
+  padding: 10px 40px; /* Space for the icon */
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+}
 
-  .icon {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #ccc;
-  }
+.form-group .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
 }
 
 .auth-btn {
@@ -59,22 +68,22 @@ h2 {
   margin-top: 15px;
   transition: background 0.3s;
   cursor: pointer;
+}
 
-  &:hover {
-    background: #e67e22;
-  }
+.auth-btn:hover {
+  background: #e67e22;
 }
 
 .auth-link {
   margin-top: 10px;
+}
 
-  a {
-    color: #f1c40f;
-    font-weight: bold;
-    text-decoration: none;
+.auth-link a {
+  color: #f1c40f;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-    &:hover {
-      color: #e67e22;
-    }
-  }
+.auth-link a:hover {
+  color: #e67e22;
 }

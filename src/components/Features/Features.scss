@@ -1,72 +1,29 @@
+
 .featured-section {
-  background-color: #f8f9fa;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0;
-
-  .container {
-    max-width: 1100px;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #333;
-  }
+  padding: 2rem 0;
 
   .custom-card {
-    border: 2px solid rgba(0, 123, 255, 0.3);
-    border-radius: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    background: #ffffff;
-    text-align: center;
-    height: 320px; // Increase height for better image fit
+    transition: transform 0.3s ease;
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
-      border-color: rgba(0, 123, 255, 0.7);
     }
 
     .card-img-top {
-      height: 70%; // Image will cover 70% of the card
+      height: 200px;
       object-fit: cover;
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
     }
 
-    .card-body {
-      padding: 12px;
+    .btn-custom {
+      background-color: #007bff;
+      color: white;
+      border: none;
 
-      .card-title {
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin-bottom: 5px;
-      }
-
-      .card-text {
-        font-size: 0.9rem;
-        color: #555;
-        margin-bottom: 8px;
-      }
-
-      .btn-custom {
-        background: linear-gradient(135deg, #007bff, #0056b3);
-        border: none;
-        padding: 8px 15px;
-        font-size: 0.85rem;
-        color: white;
-        border-radius: 8px;
-        transition: all 0.3s ease-in-out;
-
-        &:hover {
-          background: linear-gradient(135deg, #0056b3, #003f80);
-          transform: scale(1.05);
-        }
+      &:hover {
+        background-color: #0056b3;
       }
     }
   }
